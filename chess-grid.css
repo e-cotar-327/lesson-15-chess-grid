@@ -1,0 +1,49 @@
+.container {
+    width: 1280px;
+    height: 750px;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.container div {
+    border-radius: 5px;
+    border: 2px solid red;
+    background-color: aliceblue;
+    color: red;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* First item starts from column 1 and expand 3 columns
+ and from row 1 and expand 3 columns*/
+.item-1 {
+
+    grid-row: 10 / span 3;
+    grid-column: 10 / span 3;
+}
+
+/* Second item starts from column 4 and expand 3 columns
+and from row 4 and expand 3 columns*/
+.item-2 {
+    grid-row: 4 / span 3;
+    grid-column: 4 / span 3;
+}
+
+/* First item starts from column 7 and expand 3 columns
+and from row 7 and expand 3 columns*/
+.item-3 {
+    grid-row: 7 / span 3;
+    grid-column: 7 / span 3;
+}
+
+/* First item starts from column 10 and expand 3 columns
+and from row 10 and expand 3 columns*/
+.item-4 {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+}
